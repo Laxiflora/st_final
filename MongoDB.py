@@ -41,6 +41,7 @@ If you're sure you are doing right, delete \"_id\" key in your input data."
             data['time'] = datetime.strptime(data['time'], "%Y-%m-%d %H:%M:%S")
         return data
 
+
     def __insert_into_factory_and_earthqake(self, single_data: Dict):
         self.__filter_anomaly(single_data)
         factory_data = single_data.pop('magnitude')
